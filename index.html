@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap/bootstrap-icons/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/Kaushan%20Script.css" />
+    <link rel="stylesheet" href="assets/css/Montserrat.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+  </head>
+  <body
+    id="page-top"
+    data-bs-spy="scroll"
+    data-bs-target="#mainNav"
+    data-bs-offset="54"
+  >
+    <nav
+      class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#page-top" style="font-style: italic"
+          >pizoo</a
+        ><button
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list fs-6 fw-bold"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto text-uppercase">
+            <li class="nav-item"></li>
+            <li class="nav-item"></li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="signin-button" href="#">sign in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">sign up</a>
+            </li>
+          </ul>
+        </div>
+        <div id="signin-modal"></div>
+        <form onsubmit="return false" id="login">
+          <p>
+            <label for="email" class="mb-1">email</label>
+            <br />
+            <input
+              type="email"
+              class="mb-1"
+              name="email"
+              id="email"
+              required
+              style="border-radius: 5px"
+            />
+          </p>
+          <p>
+            <label for="password" class="mb-1">Password</label>
+            <br />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              style="border-radius: 5px"
+            />
+            <i
+              class="bi bi-eye-slash"
+              id="togglePassword"
+              style="cursor: pointer"
+            ></i>
+          </p>
+          <input id="loginsubmit" type="submit" class="btn" value="signin" />
+        </form>
+      </div>
+    </nav>
+    <header class="masthead">
+      <section class="food-search text-center">
+        <div class="container">
+          <form method="POST">
+            <input
+              type="search"
+              name="search"
+              placeholder="Search Foods"
+              required=""
+            />
+            <input
+              type="submit"
+              name="submit"
+              value="Search"
+              class="btn btn-primary"
+            />
+          </form>
+        </div>
+      </section>
+    </header>
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="text-uppercase section-heading">pizza</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="card">
+                <div class="portfolio-item mb-0">
+                  <a
+                    class="portfolio-link"
+                    href="#portfolioModal1"
+                    data-bs-toggle="modal"
+                  >
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content"></div>
+                    </div>
+                    <img
+                      class="img-fluid"
+                      src="assets/img/pizza/1.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio-caption px-0">
+                    <h5>Meat</h5>
+                    <button type="button" class="btn btn-warning">
+                      add to cart
+                    </button>
+                    <p class="text-muted fs-7 mt-1">76,000T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="portfolio-item mb-0">
+                  <a class="portfolio-link">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content"></div>
+                    </div>
+                    <img
+                      class="img-fluid"
+                      src="assets/img/pizza/2.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio-caption px-0">
+                    <h5>Chicken BBQ</h5>
+                    <button type="button" class="btn btn-warning">
+                      add to cart
+                    </button>
+                    <p class="text-muted fs-7 mt-1">73,000T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="portfolio-item mb-0">
+                  <a class="portfolio-link">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content"></div>
+                    </div>
+                    <img
+                      class="img-fluid"
+                      src="assets/img/pizza/3.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio-caption px-0">
+                    <h5>pepperoni</h5>
+                    <button type="button" class="btn btn-warning">
+                      add to cart
+                    </button>
+                    <p class="text-muted fs-7 mt-1">48,000T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="portfolio-item mb-0">
+                  <a class="portfolio-link">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content"></div>
+                    </div>
+                    <img
+                      class="img-fluid"
+                      src="assets/img/pizza/4.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio-caption px-0">
+                    <h5>Domino's</h5>
+                    <button type="button" class="btn btn-warning">
+                      add to cart
+                    </button>
+                    <p class="text-muted fs-7 mt-1">57,000T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="portfolio-item mb-0">
+                  <a class="portfolio-link">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content"></div>
+                    </div>
+                    <img
+                      class="img-fluid"
+                      src="assets/img/pizza/5.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio-caption px-0">
+                    <h5>margarita</h5>
+                    <button type="button" class="btn btn-warning">
+                      add to cart
+                    </button>
+                    <p class="text-muted fs-7 mt-1">38,000T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="portfolio-item mb-0">
+                  <a class="portfolio-link">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content"></div>
+                    </div>
+                    <img
+                      class="img-fluid"
+                      src="assets/img/pizza/6.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio-caption px-0">
+                    <h5>Bavarian</h5>
+                    <button type="button" class="btn btn-warning">
+                      add to cart
+                    </button>
+                    <p class="text-muted fs-7 mt-1">65,000T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-12 text-center">
+            <h2 class="text-uppercase section-heading">sandwich</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="card">
+                <div class="portfolio-item mb-0">
+                  <a class="portfolio-link">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content"></div>
+                    </div>
+                    <img
+                      class="img-fluid"
+                      src="assets/img/sandwich/1.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio-caption px-0">
+                    <h5>GYRO</h5>
+                    <button type="button" class="btn btn-warning">
+                      add to cart
+                    </button>
+                    <p class="text-muted fs-7 mt-1">67,000T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="portfolio-item mb-0">
+                  <a class="portfolio-link">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content"></div>
+                    </div>
+                    <img
+                      class="img-fluid"
+                      src="assets/img/sandwich/2.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio-caption px-0">
+                    <h5>Italian</h5>
+                    <button type="button" class="btn btn-warning">
+                      add to cart
+                    </button>
+                    <p class="text-muted fs-7 mt-1">55,000T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="portfolio-item mb-0">
+                  <a class="portfolio-link">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content"></div>
+                    </div>
+                    <img
+                      class="img-fluid"
+                      src="assets/img/sandwich/3.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio-caption px-0">
+                    <h5>chicken</h5>
+                    <button type="button" class="btn btn-warning">
+                      add to cart
+                    </button>
+                    <p class="text-muted fs-7 mt-1">60,000T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="portfolio-item mb-0">
+                  <a class="portfolio-link">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content"></div>
+                    </div>
+                    <img
+                      class="img-fluid"
+                      src="assets/img/sandwich/4.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio-caption px-0">
+                    <h5>Meatball</h5>
+                    <button type="button" class="btn btn-warning">
+                      add to cart
+                    </button>
+                    <p class="text-muted fs-7 mt-1">65,000T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="portfolio-item mb-0">
+                  <a class="portfolio-link">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content"></div>
+                    </div>
+                    <img
+                      class="img-fluid"
+                      src="assets/img/sandwich/5.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio-caption px-0">
+                    <h5>Roast Beef</h5>
+                    <button type="button" class="btn btn-warning">
+                      add to cart
+                    </button>
+                    <p class="text-muted fs-7 mt-1">65,000T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="portfolio-item mb-0">
+                  <a class="portfolio-link">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content"></div>
+                    </div>
+                    <img
+                      class="img-fluid"
+                      src="assets/img/sandwich/6.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio-caption px-0">
+                    <h5>Ham</h5>
+                    <button type="button" class="btn btn-warning">
+                      add to cart
+                    </button>
+                    <p class="text-muted fs-7 mt-1">90,000T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="portfolio-item mb-0">
+                  <a class="portfolio-link">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content"></div>
+                    </div>
+                    <img
+                      class="img-fluid"
+                      src="assets/img/sandwich/7.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio-caption px-0">
+                    <h5>Turkey</h5>
+                    <button type="button" class="btn btn-warning">
+                      add to cart
+                    </button>
+                    <p class="text-muted fs-7 mt-1">65,000T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-12 text-center">
+            <h2 class="text-uppercase section-heading">drinks</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="card">
+                <div class="portfolio-item mb-0">
+                  <a class="portfolio-link">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content"></div>
+                    </div>
+                    <img
+                      class="img-fluid drinks-img"
+                      src="assets/img/drinks/1.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio-caption px-0">
+                    <h5>Pineapple</h5>
+                    <button type="button" class="btn btn-warning">
+                      add to cart
+                    </button>
+                    <p class="text-muted fs-7 mt-1">35,000T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="portfolio-item mb-0">
+                  <a class="portfolio-link">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content"></div>
+                    </div>
+                    <img
+                      class="img-fluid drinks-img"
+                      src="assets/img/drinks/2.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio-caption px-0">
+                    <h5>Mulberry Shake</h5>
+                    <button type="button" class="btn btn-warning">
+                      add to cart
+                    </button>
+                    <p class="text-muted fs-7 mt-1">45,000T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="portfolio-item mb-0">
+                  <a class="portfolio-link">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content"></div>
+                    </div>
+                    <img
+                      class="img-fluid drinks-img"
+                      src="assets/img/drinks/3.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio-caption px-0">
+                    <h5>Coffee shake</h5>
+                    <button type="button" class="btn btn-warning">
+                      add to cart
+                    </button>
+                    <p class="text-muted fs-7 mt-1">45,000T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="portfolio-item mb-0">
+                  <a class="portfolio-link">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content"></div>
+                    </div>
+                    <img
+                      class="img-fluid drinks-img"
+                      src="assets/img/drinks/4.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio-caption px-0">
+                    <h5>watermelon</h5>
+                    <button type="button" class="btn btn-warning">
+                      add to cart
+                    </button>
+                    <p class="text-muted fs-7 mt-1">28,000T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="portfolio-item mb-0">
+                  <a class="portfolio-link">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content"></div>
+                    </div>
+                    <img
+                      class="img-fluid drinks-img"
+                      src="assets/img/drinks/5.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio-caption px-0">
+                    <h5>summer shake</h5>
+                    <button type="button" class="btn btn-warning">
+                      add to cart
+                    </button>
+                    <p class="text-muted fs-7 mt-1">53,000T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="portfolio-item mb-0">
+                  <a class="portfolio-link">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content"></div>
+                    </div>
+                    <img
+                      class="img-fluid drinks-img"
+                      src="assets/img/drinks/6.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="portfolio-caption px-0">
+                    <h5>carrot</h5>
+                    <button type="button" class="btn btn-warning">
+                      add to cart
+                    </button>
+                    <p class="text-muted fs-7 mt-1">35,000T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="contact"
+      style="background-image: url('assets/img/map-image.png')"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="text-uppercase section-heading">Contact Us</h2>
+            <h3 class="text-muted section-subheading">
+              Please send us your comments and suggestions.
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="contactForm" name="contactForm" novalidate="novalidate">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group mb-3">
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="cantact-name"
+                      placeholder="Your Name *"
+                      required=""
+                    /><small
+                      class="form-text text-danger flex-grow-1 help-block lead"
+                    ></small>
+                  </div>
+                  <div class="form-group mb-3">
+                    <input
+                      class="form-control"
+                      type="email"
+                      id="contact-email"
+                      placeholder="Your Email *"
+                      required=""
+                    /><small
+                      class="form-text text-danger help-block lead"
+                    ></small>
+                  </div>
+                  <div class="form-group mb-3">
+                    <input
+                      class="form-control"
+                      type="tel"
+                      placeholder="Your Phone *"
+                      required=""
+                    /><small
+                      class="form-text text-danger help-block lead"
+                    ></small>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-3">
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      placeholder="Your Message *"
+                      required=""
+                    ></textarea
+                    ><small
+                      class="form-text text-danger help-block lead"
+                    ></small>
+                  </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button
+                    class="btn btn-primary btn-xl text-uppercase"
+                    id="sendMessageButton"
+                    type="submit"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#"><i class="bi bi-telegram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="modal fade text-center portfolio-modal"
+      role="dialog"
+      tabindex="-1"
+      id="portfolioModal1"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9 mx-auto">
+                <div class="modal-body">
+                  <h2 class="text-uppercase">Meat</h2>
+                  <img
+                    class="img-fluid d-block mx-auto"
+                    src="assets/img/pizza/1.png"
+                    alt=""
+                  />
+                  <p>
+                    Ham, Chicken, Hunting sausages, Pepperoni, Mozzarella
+                    cheese, Tomato sauce
+                  </p>
+                  <div class="row">
+                    <button
+                      class="btn btn-danger col-6 offset-3 col-sm-5 offset-sm-1"
+                      type="button"
+                      data-bs-dismiss="modal"
+                    >
+                      <i class="fa fa-times"></i><span>&nbsp;Close</span>
+                    </button>
+                    <button
+                      class="btn btn-primary col-6 offset-3 col-sm-5 offset-sm-1"
+                      type="button"
+                      data-bs-dismiss="modal"
+                    >
+                      add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+      // owl carousel js setup
+      $(".owl-carousel").owlCarousel({
+        loop: false,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          425: {
+            items: 2,
+          },
+          800: {
+            items: 3,
+          },
+          1000: {
+            items: 4,
+          },
+          1200: {
+            items: 5,
+          },
+        },
+      });
+    </script>
+    <script>
+      // signin modal show and hide
+      $("#signin-button").click(function () {
+        $("#login").css("display", "block");
+        $("#signin-modal").css("display", "block");
+        $("#signin-modal").click(function () {
+          $("#signin-modal").hide();
+          $("#login").hide();
+        });
+      });
+    </script>
+    <script>
+      // show and hide password
+      const togglePassword = document.querySelector("#togglePassword");
+      const password = document.querySelector("#password");
+
+      togglePassword.addEventListener("click", function () {
+        // toggle the type attribute
+        const type =
+          password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+
+        // toggle the icon
+        this.classList.toggle("bi-eye");
+      });
+
+      // prevent form submit
+      const form = document.querySelector("form");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+      });
+    </script>
+    <script src="assets/js/signup.js"></script>
+    <script src="assets/js/signin.js"></script>
+  </body>
+</html>

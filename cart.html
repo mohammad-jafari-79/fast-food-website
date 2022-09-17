@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>cart</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap/bootstrap-icons/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/Kaushan%20Script.css" />
+    <link rel="stylesheet" href="assets/css/Montserrat.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+  </head>
+  <body
+    id="page-top"
+    data-bs-spy="scroll"
+    data-bs-target="#mainNav"
+    data-bs-offset="54"
+  >
+    <nav
+      class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html" style="font-style: italic"
+          >pizoo</a
+        ><button
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list fs-6 fw-bold"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto text-uppercase">
+            <li class="nav-item"></li>
+            <li class="nav-item"></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="signin-button" href="#">sign in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">sign up</a>
+            </li>
+          </ul>
+        </div>
+        <div id="signin-modal"></div>
+        <form onsubmit="return false" id="login">
+          <p>
+            <label for="email" class="mb-1">email</label>
+            <br />
+            <input
+              type="email"
+              class="mb-1"
+              name="email"
+              id="email"
+              required
+              style="border-radius: 5px"
+            />
+          </p>
+          <p>
+            <label for="password" class="mb-1">Password</label>
+            <br />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              style="border-radius: 5px"
+            />
+            <i
+              class="bi bi-eye-slash"
+              id="togglePassword"
+              style="cursor: pointer"
+            ></i>
+          </p>
+          <input id="loginsubmit" type="submit" class="btn" value="signin" />
+        </form>
+      </div>
+    </nav>
+    <section class="h-100 bg-light" style="background-color: #eee">
+      <div class="container h-100 py-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-10">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h3 class="fw-normal mb-0 text-black">Shopping Cart</h3>
+              <div>
+                <p class="mb-0">
+                  <span class="text-muted">Sort by:</span>
+                  <a
+                    href="javascript:void(0)"
+                    class="text-body"
+                    style="text-decoration: none"
+                    >price <i class="bi bi-arrow-down-circle"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="card rounded-3 mb-4">
+              <div class="card-body p-4">
+                <div
+                  class="row d-flex justify-content-between align-items-center text-center"
+                >
+                  <div class="col-md-2 col-lg-2 col-xl-2 px-0">
+                    <img
+                      src="assets/img/drinks/2.jpg"
+                      class="img-fluid rounded-3"
+                    />
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3 py-3">
+                    <p class="lead fw-normal mb-0">Mulbary Shake</p>
+                  </div>
+                  <div
+                    class="col-10 offset-1 col-sm-6 offset-sm-3 col-md-3 offset-md-0 col-lg-3 col-xl-2 d-flex px-0"
+                  >
+                    <button
+                      class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    >
+                      <i class="bi bi-dash fs-4 fw-bold"></i>
+                    </button>
+                    <input
+                      min="1"
+                      name="quantity"
+                      value="1"
+                      type="number"
+                      class="form-control form-control-sm"
+                    />
+                    <button
+                      class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    >
+                      <i class="bi bi-plus fs-4 fw-bold"></i>
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 py-3">
+                    <h5 class="mb-0">45,000T</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="javascript:void(0)" class="text-danger"
+                      ><i class="bi bi-trash-fill fs-4 fw-bold"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card rounded-3 mb-4">
+              <div class="card-body p-4">
+                <div
+                  class="row d-flex justify-content-between align-items-center text-center"
+                >
+                  <div class="col-md-2 col-lg-2 col-xl-2 px-0">
+                    <img
+                      src="assets/img/pizza/1.png"
+                      class="img-fluid rounded-3"
+                    />
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3 py-3">
+                    <p class="lead fw-normal mb-0">Meat</p>
+                  </div>
+                  <div
+                    class="col-10 offset-1 col-sm-6 offset-sm-3 col-md-3 offset-md-0 col-lg-3 col-xl-2 d-flex px-0"
+                  >
+                    <button
+                      class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    >
+                      <i class="bi bi-dash fs-4 fw-bold"></i>
+                    </button>
+                    <input
+                      min="1"
+                      name="quantity"
+                      value="1"
+                      type="number"
+                      class="form-control form-control-sm"
+                    />
+                    <button
+                      class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    >
+                      <i class="bi bi-plus fs-4 fw-bold"></i>
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 py-3">
+                    <h5 class="mb-0">76,000T</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="javascript:void(0)" class="text-danger"
+                      ><i class="bi bi-trash-fill fs-4 fw-bold"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card rounded-3 mb-4">
+              <div class="card-body p-4">
+                <div
+                  class="row d-flex justify-content-between align-items-center text-center"
+                >
+                  <div class="col-md-2 col-lg-2 col-xl-2 px-0">
+                    <img
+                      src="assets/img/sandwich/3.png"
+                      class="img-fluid rounded-3"
+                    />
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3 py-3">
+                    <p class="lead fw-normal mb-0">chicken</p>
+                  </div>
+                  <div
+                    class="col-10 offset-1 col-sm-6 offset-sm-3 col-md-3 offset-md-0 col-lg-3 col-xl-2 d-flex px-0"
+                  >
+                    <button
+                      class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    >
+                      <i class="bi bi-dash fs-4 fw-bold"></i>
+                    </button>
+                    <input
+                      min="1"
+                      name="quantity"
+                      value="2"
+                      type="number"
+                      class="form-control form-control-sm"
+                    />
+                    <button
+                      class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    >
+                      <i class="bi bi-plus fs-4 fw-bold"></i>
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 py-3">
+                    <h5 class="mb-0">120,000T</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="javascript:void(0)" class="text-danger"
+                      ><i class="bi bi-trash-fill fs-4 fw-bold"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card rounded-3 mb-4">
+              <div class="card-body p-4">
+                <div
+                  class="row d-flex justify-content-between align-items-center text-center"
+                >
+                  <div class="col-md-2 col-lg-2 col-xl-2 px-0">
+                    <img
+                      src="assets/img/pizza/6.png"
+                      class="img-fluid rounded-3"
+                    />
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3 py-3">
+                    <p class="lead fw-normal mb-0">Bavarian</p>
+                  </div>
+                  <div
+                    class="col-10 offset-1 col-sm-6 offset-sm-3 col-md-3 offset-md-0 col-lg-3 col-xl-2 d-flex px-0"
+                  >
+                    <button
+                      class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    >
+                      <i class="bi bi-dash fs-4 fw-bold"></i>
+                    </button>
+                    <input
+                      min="1"
+                      name="quantity"
+                      value="1"
+                      type="number"
+                      class="form-control form-control-sm"
+                    />
+                    <button
+                      class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    >
+                      <i class="bi bi-plus fs-4 fw-bold"></i>
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 py-3">
+                    <h5 class="mb-0">65,000T</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="javascript:void(0)" class="text-danger"
+                      ><i class="bi bi-trash-fill fs-4 fw-bold"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-body p-4 d-flex flex-row">
+                <div class="form-floating flex-fill">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="form1"
+                    placeholder="none"
+                  />
+                  <label for="form1">Discound code</label>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-outline-warning btn-lg ms-3"
+                >
+                  Apply
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <input
+                  type="button"
+                  class="btn btn-warning btn-block btn-lg col-12 col-sm-6 offset-sm-3"
+                  value="Proceed to Pay"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#"><i class="bi bi-telegram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+      // owl carousel js setup
+      $(".owl-carousel").owlCarousel({
+        loop: false,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          425: {
+            items: 2,
+          },
+          800: {
+            items: 3,
+          },
+          1000: {
+            items: 4,
+          },
+          1200: {
+            items: 5,
+          },
+        },
+      });
+    </script>
+    <script>
+      // signin modal show and hide
+      $("#signin-button").click(function () {
+        $("#login").css("display", "block");
+        $("#signin-modal").css("display", "block");
+        $("#signin-modal").click(function () {
+          $("#signin-modal").hide();
+          $("#login").hide();
+        });
+      });
+    </script>
+    <script>
+      // show and hide password
+      const togglePassword = document.querySelector("#togglePassword");
+      const password = document.querySelector("#password");
+
+      togglePassword.addEventListener("click", function () {
+        // toggle the type attribute
+        const type =
+          password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+
+        // toggle the icon
+        this.classList.toggle("bi-eye");
+      });
+
+      // prevent form submit
+      const form = document.querySelector("form");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+      });
+    </script>
+    <script src="assets/js/signup.js"></script>
+    <script src="assets/js/signin.js"></script>
+  </body>
+</html>

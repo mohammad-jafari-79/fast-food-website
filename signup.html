@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>signup</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap/bootstrap-icons/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/Kaushan%20Script.css" />
+    <link rel="stylesheet" href="assets/css/Montserrat.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+  </head>
+  <body
+    id="page-top"
+    data-bs-spy="scroll"
+    data-bs-target="#mainNav"
+    data-bs-offset="54"
+  >
+    <nav
+      class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html" style="font-style: italic"
+          >pizoo</a
+        >
+        <button
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list fs-6 fw-bold"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto text-uppercase">
+            <li class="nav-item"></li>
+            <li class="nav-item"></li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="signin-button" href="#">sign in</a>
+            </li>
+            <li class="nav-item"></li>
+          </ul>
+        </div>
+        <div id="signin-modal"></div>
+        <form onsubmit="return false" id="login">
+          <p>
+            <label for="email" class="mb-1">email</label>
+            <br />
+            <input
+              type="email"
+              class="mb-1"
+              name="email"
+              id="email"
+              required
+              style="border-radius: 5px"
+            />
+          </p>
+          <p>
+            <label for="password" class="mb-1">Password</label>
+            <br />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              style="border-radius: 5px"
+            />
+            <i
+              class="bi bi-eye-slash"
+              id="togglePassword"
+              style="cursor: pointer"
+            ></i>
+          </p>
+          <input id="loginsubmit" type="submit" class="btn" value="signin" />
+        </form>
+      </div>
+    </nav>
+    <section class="bg-light" id="portfolio">
+      <div id="resultreg" style="position: relative"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <div class="signup-form">
+              <form action="" class="mt-5 border p-4 bg-light shadow">
+                <h4 class="mb-5 text-secondary">
+                  Create Your Account <i class="fa-solid fa-pizza-slice"></i>
+                </h4>
+                <div class="row">
+                  <div class="mb-3 col-md-6">
+                    <label>First Name<span class="text-danger">*</span></label>
+                    <input
+                      type="text"
+                      id="f_name"
+                      name="f_name"
+                      class="form-control"
+                      placeholder="Enter First Name"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3 col-md-6">
+                    <label>Last Name<span class="text-danger">*</span></label>
+                    <input
+                      type="text"
+                      id="l_name"
+                      name="l_name"
+                      class="form-control"
+                      placeholder="Enter Last Name"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3 col-md-12">
+                    <label>Email<span class="text-danger">*</span></label>
+                    <input
+                      type="email"
+                      id="emailreg"
+                      name="emailreg"
+                      class="form-control"
+                      placeholder="Enter Email"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3 col-md-12">
+                    <label>Password<span class="text-danger">*</span></label>
+                    <input
+                      type="password"
+                      id="password1"
+                      name="password1"
+                      class="form-control"
+                      placeholder="Enter Password"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 col-md-12">
+                    <label
+                      >Confirm Password<span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="password"
+                      id="password2"
+                      name="password2"
+                      class="form-control"
+                      placeholder="Confirm Password"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3 col-md-12">
+                    <label
+                      >Phone Number<span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="mobile"
+                      name="mobile"
+                      class="form-control"
+                      placeholder="Enter Phone Number"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3 col-md-12">
+                    <label>Address<span class="text-danger">*</span></label>
+                    <input
+                      type="text"
+                      id="address"
+                      name="address"
+                      class="form-control"
+                      placeholder="Enter Address"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-12">
+                    <button
+                      id="submit"
+                      value="signup"
+                      class="btn btn-primary float-end"
+                    >
+                      Signup Now
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#"><i class="bi bi-telegram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+      // owl carousel js setup
+      $(".owl-carousel").owlCarousel({
+        loop: false,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          425: {
+            items: 2,
+          },
+          800: {
+            items: 3,
+          },
+          1000: {
+            items: 4,
+          },
+          1200: {
+            items: 5,
+          },
+        },
+      });
+    </script>
+    <script>
+      // signin modal show and hide
+      $("#signin-button").click(function () {
+        $("#login").css("display", "block");
+        $("#signin-modal").css("display", "block");
+        $("#signin-modal").click(function () {
+          $("#signin-modal").hide();
+          $("#login").hide();
+        });
+      });
+    </script>
+    <script>
+      // show and hide password
+      const togglePassword = document.querySelector("#togglePassword");
+      const password = document.querySelector("#password");
+
+      togglePassword.addEventListener("click", function () {
+        // toggle the type attribute
+        const type =
+          password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+
+        // toggle the icon
+        this.classList.toggle("bi-eye");
+      });
+
+      // prevent form submit
+      const form = document.querySelector("form");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+      });
+    </script>
+    <script src="assets/js/signup.js"></script>
+    <script src="assets/js/signin.js"></script>
+  </body>
+</html>
