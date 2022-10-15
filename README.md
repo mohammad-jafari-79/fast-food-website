@@ -24,6 +24,19 @@ The same thing is true for the internet business, if this business does not meet
 In today's world, the surest way to overcome these limitations is to offer the product through the website.</br>
 After launching your website, you will have the possibility to attract customers from anywhere in the world without boundaries and to expand your circle of customers from any geographical boundaries.</br>
 Considering the reasons mentioned and the importance of the website in the discussion of selling products, I planned to have experience in this field by implementing a store website.
+
+## ER Diagram
+<img src="./ER-Diagram.png" width="100%">
+
+## Home Page Preview
+<img src="./gifs/home page.gif" width="100%">
+
+## Cart Page Preview
+<img src="./gifs/cart page.gif" width="100%">
+
+## Signup Page Preview
+<img src="./gifs/signup page.gif" width="100%">
+
 ## Initial setup
 1- Install XAMPP and start apache and mysql services.<br>
 2- Upload the pizzo file into the folder at c:/xampp/htdocs (xampp software defualt installation location).<br>
